@@ -1,0 +1,36 @@
+{
+  "name": "projeto02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js",
+    "test": "vitest run ",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "4.11.0",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.0.3",
+    "fastify": "^4.15.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "^18.15.8",
+    "@vitest/coverage-c8": "0.29.7",
+    "dayjs": "1.11.7",
+    "prisma": "4.11.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2",
+    "vite-tsconfig-paths": "4.0.7",
+    "vitest": "0.29.7"
+  }
+}
